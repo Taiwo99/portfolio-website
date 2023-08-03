@@ -57,8 +57,7 @@ p{
 }
 .cta{
     margin: 10px;
-    align-content: center;
-    justify-content: center;
+    text-align: center;
     border-radius: 12px;
     gap: 8px;
     color: var(--gray600);
@@ -82,7 +81,7 @@ p{
 }
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;git s
+    scroll-behavior: smooth;
 }
  
 header{
@@ -146,14 +145,11 @@ nav ul li a {
     padding: 10px;
     margin-bottom: 15px;
 }
-.home-add{
-    align-items: start;
-    justify-content: center;
-}
 .home-add p{
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    padding: 5px;
 }
 .fa-circle{
     color: var(--green);
@@ -161,6 +157,14 @@ nav ul li a {
 .fa-sun{
     padding: 10px;
     font-size: 30px;
+}
+.home-footer{
+    display: flex;
+    align-items: center;
+}
+.home-icon{
+    padding: 10px;
+    padding-left: 0;
 }
 .home-icon p i{
     padding: 5px;
@@ -172,17 +176,13 @@ nav ul li a {
 /* --about me -- */
 .about-me{
     background: var(--gray50);
-    align-items: center;
-    align-content: center;
+    text-align: center;
 }
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-}
-.cta{
-    align-content: center;
 }
 .about-image{
    display: flex 1;
@@ -197,6 +197,9 @@ nav ul li a {
 .sub-about-text{
     margin-top: 40px;
     padding: 0 10px;
+}
+.text-col{
+    text-align: start;
 }
 .text-col p{
     padding: 5px;
@@ -215,10 +218,11 @@ td li{
     font-size: 16px;
 }
 
-
+.skill{
+    text-align: center;
+}
 .skill-con{
-    align-items: center;
-    align-content: center;
+    text-align: center;
 }
 .skill-con sub{
     align-items: center;
@@ -251,9 +255,10 @@ td li{
 
 /* --work--- */
 .work{
-    
+    text-align: center;
 }
 .work-con{
+    text-align: center;
     padding: 30px;
 }
 .work-title sub{
@@ -297,26 +302,17 @@ td li{
 /* ---experience-- */
 .experience{
     background: var(--gray50);
-    align-items: center;
-}
-.experience-con{
-    padding: 30px;
-}
-.experience-con{
-    align-items: center;
+    text-align: center;
+    
 }
 .experience-col{
-    justify-content: center;
     
 }
 .Experience-details{
-    width: 80%;
     display: flex;
     background: var(--white);
     justify-content: space-between;
-    padding: 20px, 15px;
     margin: 30px;
-    margin-bottom: 50px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
@@ -344,21 +340,25 @@ td li{
 
 .testimonials{
     background: var(--gray50);
+    text-align: center;
 }
  .testimonial-con{
-    padding: 20px;
+    text-align: center;
+   
 } 
 .testimonial-con sub{
     padding: 20px;
 } 
 .container{
+    text-align: center;
+    align-items: center;
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
     margin: 20px;
-   padding-bottom: 1.5rem;
    
 }
 .wapper{
+    text-align: center;
     align-content: center;
     padding: 2rem;
     box-shadow: var(--box-shadow);
@@ -387,57 +387,52 @@ td li{
     padding: 10px;
     font-size: 12px;
 }
+
+/* --get in contact-- */
 .get-in{
-    justify-content: center;
-    align-content: center;
+    text-align: center;
     background: var(--white);
-    background-position: cover;
-    padding: 5rem;
 }
 .get-in-touch{
    
     justify-content: center;
     align-items: center;
 }
-.get-in-con{
-    padding: 20px;
+
+.sub{
+    padding: 15px;
+ text-align: center;
 }
 .get-in-con sub{
-    align-items: center;
-    justify-content: center;
-}
-.sub-p{
- 
+    padding: 10px;
 }
 .footer-con{
-
+    text-align: center;
 }
 .footer-con a{
     text-decoration: none;
     padding: 5px;
 }
 .get-in-touch h5{
-   
     font-size: 28px;
     padding: 20px;
 }
 .get-in-touch h5 a{
     color: #030712;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     font-size: 28px;
 }
-
 .footer-con2{
+    padding: 10px;
+}
+.footer-con p{
     padding: 10px;
 }
 .footer-con p a{
     color: #030712;
     font-size: 28px;
     font-weight: bold;
-}
-.footer-con2 p{
-    
 }
 .footer-icon{
     padding: 10px;
@@ -456,12 +451,14 @@ td li{
 /* ---copyright-- */
 .copyright{
     background-color: var(--gray50);
+    text-align: center;
 }
 .copyright-con{
-   display: flex;
+
 }
 .link{
-    align-items: center;
+    text-align: center;
+    padding: 5px;
 }
 .link i{
     color: var(--green);
@@ -475,34 +472,36 @@ td li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:991px){
     html{
-        font-size: 50%;
-    }
-    header{
-        padding: 1rem;
-    }
-
-    .home-con{
-        display: block;
-    }
-    .home-add,
-    .home-icon{
-        margin: 7px;
+        font-size: ;
     }
     h1{
         font-size: 36px;
         line-height: 40px;
         font-weight: 600;
-    }
-
-    .about-container{
-        display: block;
-        padding: 10px;
-    }
-    .about-image{
-        width: 50%;
-        height: auto;
     }
     h3{
         font-size: 24px;
@@ -521,44 +520,98 @@ td li{
         line-height: 24px;
 
     }
-    .list-text td li{
-        font-size: 10px;
-    }
-
-   
     sub{
         font-size: 18px;
         line-height: 28px;
     }
-    .cta{
-        margin: 10px;
-        margin-left: 48%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 12px;
-        gap: 8px;
-        color: var(--gray600);
-        background: var(--gray200);
-        padding: 10px 13px;
-        font-size: 16px; 
-        text-decoration: none;
-    }   
-    .skill-con{
-        margin: auto;
+    header{
+        padding: 1rem;
+    }
+
+    .home-con{
         display: block;
     }
+
+
+    /* ---about-- */
+    .about-container{
+        display: block;
+        padding: 10px;
+    }
+    .list-text td li{
+        font-size: 10px;
+    }
+/* ---skill-- */
+
+.skill-con{
+    margin: auto;
+    display: block;
+}
+.skills-col{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 70%;
+    column-gap: 30px;
+    margin: auto auto;
+    margin-top: 10px;
+}
+/* -- Experience-details-- */
+.Experience-details{
+    display: block;
+}
+.work-col{
+    display: block;
+}
+.menu-list{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr)
+}
+/* --work-- */
+.work-col{
+    display: block;
+}
+
+/* --testiomonia,-- */
+.testimonial{
+    display: block;
+}
+
+.container{
+    display: block;
+    /* row-gap: 20px;
+    column-gap: 20px;
+    padding-bottom: 1.5rem;
+    justify-content: space-between; */
+}
+
+
+
+
+
+
+
+    /* .home-add,
+    .home-icon{
+        margin: 7px;
+    }
+    
+
+    
+    .about-image{
+        width: 50%;
+        height: auto;
+    }
+   
+   
+   
+    
+   
+    
     .skill-con sub{
         padding: 0;
         font-size: 18px;
     }
-    .skills-col{
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
-        width: 70%;
-        column-gap: 30px;
-        margin: auto auto;
-        margin-top: 10px;
-    }
+    
 
     .Experience-details{
         display: block;
@@ -568,13 +621,7 @@ td li{
             border-radius: 10px;
          
     }
-    .work-col{
-        display: block;
-    }
-    .menu-list{
-        display: grid;
-       grid-template-columns: repeat(3, 1fr)
-    }
+   
     .container{
         display: block;
         row-gap: 20px;
@@ -621,13 +668,9 @@ td li{
        font-size: 18px;
        font-weight: bold;
    }
-   .footer-con2 p{
-       margin-left: 450px;
-   }
    .footer-icon{
        padding: 10px;
        justify-content: center;
-       margin-left: 100px;
    }
    .footer-icon a{
        color:var(--gray600);
@@ -636,24 +679,7 @@ td li{
        padding: 5px;
        font-size: 18px;
        color: var(--green);
-   }
-   
-   
-   /* ---copyright-- */
-   .copyright{
-       background-color: var(--gray50);
-   }
-   .copyright-con{
-      display: flex;
-   }
-   .link{
-       margin-left: 500px;
-   }
-   .link i{
-       color: var(--green);
-   }
-   
+   }   */
    
    
 }
-
